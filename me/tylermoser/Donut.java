@@ -4,11 +4,6 @@ import java.io.IOException;
 import java.time.Instant;
 import java.util.Arrays;
 
-/*
- * From src directory:
- * javac ./me/tylermoser/Donut.java
- * java java me.tylermoser.Donut
- */
 public class Donut {
 
     private static final int CANVAS_WIDTH = 640;
