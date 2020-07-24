@@ -9,12 +9,10 @@ While browsing YouTube, I came across a video titled "[Donut-shaped C code that 
 Over the course of a few days, I further deobfuscated the code with input from the second article. I also added support for Windows, and made a slight modification to allow the donut to rotate for a much longer period of time before it stops. I also ported the code to Java. The Java version of the code supports the original ascii, as well as a pixel-based output. The original program uses 12 "levels" of illumination, represented by 12 different ascii characters. The pixel-based output uses 128 shades of grayscale. As I originally intended to use this code as a sort of benchmarking exercise, both versions of the code run for a single minute, and then print the average number of frames rendered each second during that minute.
 
 ### Instructions
-##### C version
 The C version of the code can be compiled with `gcc -Wall -O2 donut.c -lm`. The resulting object file can then be executed.
 
 On Windows, the code can also be compiled and executed using visual studio. To do so, create a new C++ console application, delete all of the auto-generated files, and place donut.c in the "Source Files" folder. Then turn off precompiled headers by right-clicking on the project in the solution explorer and clicking properties > Configuration Properties > C/C++ > Precompiled Headers and changing the Precompiled Header drop-down to "Not Using Precompiled Headers".
 
-##### Java version
 The Java code can be compiled from this repository's base directory by running `javac ./me/tylermoser/Donut.java`. It can then be executed with `java me.tylermoser.Donut`.
 
 ### Background
